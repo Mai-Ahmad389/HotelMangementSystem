@@ -1,31 +1,21 @@
-CREATE DATABASE IF NOT EXISTS HotelManagementSystem;
-USE HotelManagementSystem;
-
-CREATE TABLE Rooms (
-RoomID INT PRIMARY KEY AUTO_INCREMENT,
-RoomNumber VARCHAR(10) NOT NULL UNIQUE,
-RoomType VARCHAR(20) NOT NULL,
-PricePerNight DECIMAL(10,2) NOT NULL,
-IsAvailable BOOLEAN DEFAULT TRUE
-);
-
-CREATE TABLE Guests
-(
-GuestID INT PRIMARY KEY AUTO_INCREMENT,
-Name VARCHAR(100) NOT NULL,
-Phone VARCHAR(20),
-Email VARCHAR(100)
-);
-
-CREATE TABLE Reservations (
-ReservationID INT PRIMARY KEY AUTO_INCREMENT,
-GuestID INT,
-RoomID INT,
-CheckInDate DATE NOT NULL,
-CheckOutDate DATE NOT NULL,
-NumberOfNights INT NOT NULL,
-TotalPrice DECIMAL(10,2) NOT NULL,
-Status VARCHAR(20) DEFAULT 'Active',
-FOREIGN KEY (GuestID) REFERENCES Guests(GuestID),
-FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID)
-);
+Hotel Management System
+Project Description
+A comprehensive Hotel Management System built as a console application in C# to manage rooms, guests, and reservations, accompanied by a MySQL database schema and documentation.
+Features
+Add, view, and search rooms.
+Add, view, and search guests.
+Create and cancel room reservations.
+Automatic update of room availability status.
+Technologies Used
+C# (.NET Console Application)
+Object-Oriented Programming (OOP)
+MySQL Database
+Git & GitHub
+Project Structure
+HotelMangementSystem/: C# Console Application Code.
+Database/: Contains hotel_database.sql script.
+Documentation/: Contains FunctionalRequirements.md.
+How to Run the C# Project
+Open Visual Studio.
+Open HotelMangementSystem.sln.
+Press F5 or click Start to run the console menu.
