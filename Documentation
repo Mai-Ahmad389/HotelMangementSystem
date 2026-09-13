@@ -1,0 +1,13 @@
+Functional Requirements
+Room Management
+FR-01: The system shall allow the user to add a new room.
+FR-02: The system shall allow the user to view all rooms.
+FR-03: The system shall allow the user to search for a room by ID.
+Guest Management
+FR-04: The system shall allow the user to add a new guest.
+FR-05: The system shall allow the user to view all guests.
+FR-06: The system shall allow the user to search for a guest by ID.
+Reservation Management
+FR-07: The system shall allow the user to create a reservation for an available room.
+FR-08: The system shall allow the user to cancel an existing reservation and mark the room as available.
+FR-09: The system shall allow the user to view all reservations.
